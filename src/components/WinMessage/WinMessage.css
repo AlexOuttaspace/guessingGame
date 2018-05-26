@@ -1,0 +1,30 @@
+.WinMessage {
+  color: rgb(162, 162, 221);
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.PlayAgain {
+  background-color: transparent;
+  border: 2px solid rgb(162, 162, 221);
+  background-color: rgb(238, 238, 252);
+  padding: 20px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  color: rgb(81, 81, 124);
+  transition: all .3s;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .2)
+}
+
+.PlayAgain:hover {
+  border-color: transparent;
+  background-color: rgb(178, 178, 231);
+  color: white;
+}
+
+.PlayAgain:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
+}
+

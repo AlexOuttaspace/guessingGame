@@ -1,0 +1,42 @@
+.Header {
+  width: 100%;
+  height: 48px;
+  background-color: rgb(157, 181, 226);
+  margin-bottom: 20px;
+  color: whitesmoke;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .2)
+}
+
+.Header h1 {
+  float: left;
+  margin: 0 15px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.Header h1 a,
+.Header h1 a:visited,
+.Header h1 a:active {
+  text-decoration: none;
+  color: inherit
+}
+
+.Restart {
+  float: right;
+  padding: 0 15px;
+  margin: 0 15px;
+  height: 48px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.Restart:hover {
+  background-color: rgb(141, 164, 206);
+}

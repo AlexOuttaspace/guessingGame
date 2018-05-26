@@ -1,0 +1,28 @@
+.Tile {
+  display: inline-block;
+  border-radius: 20%;
+  margin: 2%;
+  width: 20%;
+  transition: all .2s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.Tile:before {
+  content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.Covered {
+  background-color: rgb(196, 196, 196);
+  cursor: pointer;
+}
+
+.Covered:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .15);
+  transform: scale(1.03);
+}
+
+.Guessed {
+  opacity: 0;
+}
