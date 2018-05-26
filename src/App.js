@@ -14,7 +14,7 @@ const CssColors = [
       'cyan',
       'salmon',
       'lightblue'
-]
+];
 
 class App extends Component {
   constructor(props){
@@ -23,7 +23,7 @@ class App extends Component {
       tiles: this.createColorObjectsArray(),
       prevOpened: null,
       openable: true,
-      won: !false
+      won: false
     }
   }
 
@@ -33,7 +33,7 @@ class App extends Component {
       prevOpened: null,
       openable: true,
       won: false
-    })
+    });
   }
 
   createColorObjectsArray = () => {
@@ -72,7 +72,7 @@ class App extends Component {
       // determine if both tiles have same color
       const guessed = tiles[index].color === tiles[prevOpened].color;
       
-      this.setState({prevOpened: null, openable: false})
+      this.setState({prevOpened: null, openable: false});
       
       // close/remove tiles after .3 seconds
       setTimeout(() => {
@@ -95,7 +95,7 @@ class App extends Component {
           : t
       ));
 
-      return ({tiles, openable: true})
+      return ({tiles, openable: true});
     })
   }
 
